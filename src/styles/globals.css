@@ -13,7 +13,7 @@ body {
     font-size: "Roboto";
 }
 
-.sidebar {
+.custom-layout-sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -21,7 +21,7 @@ body {
 }
 
 /* MAIN LAYOUT CSS */
-.App {
+.custom-layout-app {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,8 +29,8 @@ body {
     color: var(--content-color);
 }
 
-.header,
-.footer {
+.custom-layout-header,
+.custom-layout-footer {
     background: var(--header-bgc);
     height: 50px;
     color: var(--header-tc);
@@ -38,21 +38,21 @@ body {
     padding-right: 1vw;
 }
 
-.container {
+.custom-layout-container {
     display: flex;
     flex: 1;
 }
 
-.drawer-open {
+.custom-layout-drawer-open {
     width: 20%;
 }
 
-.drawer-closed {
+.custom-layout-drawer-closed {
     width: 0px;
     transition: width 0.7s;
 }
 
-.main {
+.custom-layout-main {
     flex: 1;
     background: var(--main-bgc);
 }

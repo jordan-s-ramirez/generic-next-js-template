@@ -1,36 +1,8 @@
 import Layout from "@/components/layout/layout";
-
 const Page = () => {
   return (
     <>
       <p>hello</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
-      <p>hello worlfdjgsgfjdgfjdfgsjgkfjgfkljkgfjdsffgdsjkgjkl;d</p>
     </>
   );
 };
