@@ -4,7 +4,7 @@ import { GrDocumentText } from "react-icons/gr";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { IoMdHelpCircleOutline } from "react-icons/io";
-
+import { PiFlowArrowBold } from "react-icons/pi";
 export var navbarConfig = {
   config: [
     {
@@ -48,6 +48,13 @@ export var navbarConfig = {
       url: "/help",
       title: "Help",
       icon: <IoMdHelpCircleOutline />,
+    },
+    {
+      type: "MenuItem",
+      description: "Workflow integration",
+      url: "/workflow",
+      title: "Workflow",
+      icon: <PiFlowArrowBold />,
     },
   ],
 };
