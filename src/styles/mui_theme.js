@@ -1,9 +1,23 @@
 import { createTheme } from "@mui/material/styles";
 
+const staticColors = {
+  primaryMain: "#4caf50",
+  secondaryMain: "#edf2ff",
+  backgroundColorActive: "eecef9",
+  backgroundColorNotActive: undefined,
+};
+
 export const theme = createTheme({
-  main: {
-    palette: {
-      primary: "green",
+  palette: {
+    custom: {
+      backgroundColorActive: staticColors.backgroundColorActive,
+      backgroundColorNotActive: staticColors.backgroundColorNotActive,
+    },
+    primary: {
+      main: staticColors.primaryMain,
+    },
+    secondary: {
+      main: staticColors.secondaryMain,
     },
   },
   components: {
@@ -16,7 +30,7 @@ export const theme = createTheme({
           //     color: "#fff",
           //   }),
           ...(ownerState.color === "primary" && {
-            backgroundColor: "green",
+            backgroundColor: staticColors.primaryMain,
             color: "#fff",
           }),
         }),
@@ -27,7 +41,7 @@ export const theme = createTheme({
         root: ({ ownerState }) => ({
           ...(ownerState.color === "primary" && {
             // backgroundColor: "",
-            color: "green",
+            color: staticColors.primaryMain,
           }),
         }),
       },

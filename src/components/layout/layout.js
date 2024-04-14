@@ -21,7 +21,7 @@ export default function Layout({ children }) {
                   setDrawerOpen((e) => !e);
                 }}
               >
-                <Navbar drawerOpen={drawerOpen} />
+                <Navbar drawerOpen={drawerOpen} theme={theme} />
               </div>
             </aside>
             <main className="custom-layout-main">{children}</main>
