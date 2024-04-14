@@ -8,6 +8,13 @@ import {
 import { navbarConfig } from "./navbar-config.js";
 import React from "react";
 
+const navbarColors = {
+  color: "green",
+  colorDisabled: "green",
+  backgroundColorActive: "eecef9",
+  backgroundColorNotActive: undefined,
+};
+
 export default function Navbar({ drawerOpen }) {
   const [currSubUrl, setCurrSubUrl] = React.useState("");
   React.useEffect(() => {
@@ -32,8 +39,10 @@ export default function Navbar({ drawerOpen }) {
           button: ({ level, active, disabled }) => {
             // only apply styles on first level elements of the tree
             return {
-              color: disabled ? "#f5d9ff" : "#d359ff",
-              backgroundColor: active ? "#eecef9" : undefined,
+              color: disabled ? navbarColors.colorDisabled : navbarColors.color,
+              backgroundColor: active
+                ? navbarColors.backgroundColorActive
+                : navbarColors.backgroundColorNotActive,
             };
             // if (level === 0)
           },

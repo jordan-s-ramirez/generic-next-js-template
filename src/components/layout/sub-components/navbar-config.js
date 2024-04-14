@@ -3,7 +3,7 @@ import { GiChart } from "react-icons/gi";
 import { GrDocumentText } from "react-icons/gr";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { AiOutlinePieChart } from "react-icons/ai";
-
+import { IoMdHelpCircleOutline } from "react-icons/io";
 export var navbarConfig = {
   config: [
     {
@@ -32,6 +32,11 @@ export var navbarConfig = {
       type: "MenuItem",
       title: "Calendar",
       icon: <AiOutlineCalendar />,
+    },
+    {
+      type: "MenuItem",
+      title: "Help",
+      icon: <IoMdHelpCircleOutline />,
     },
   ],
 };
