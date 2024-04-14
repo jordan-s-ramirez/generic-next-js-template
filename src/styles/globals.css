@@ -23,7 +23,7 @@ body {
 /* MAIN LAYOUT CSS */
 .custom-layout-app {
     /* color: var(--content-color); */
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;

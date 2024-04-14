@@ -2,7 +2,7 @@ import Layout from "@/components/layout/layout";
 const Page = () => {
   return (
     <>
-      <p>hello</p>
+      <h3 style={{ marginLeft: "1vw" }}>Internal Tools</h3>
     </>
   );
 };
