@@ -3,36 +3,53 @@ import Workflow from "@/components/workflow/workflow";
 import { workflowConfigInitalEdges } from "@/util/workflow/workflowConfigInitalEdges";
 import { workflowConfigInitalNodes } from "@/util/workflow/workflowConfigInitalNodes";
 import React from "react";
+
 const initialNodes = [
   {
     id: "1",
-    title: "Loading",
-    position: { x: 0, y: 0 },
-    type: "input",
+    title: "Loading please",
   },
   {
     id: "2",
     title: "wait!",
-    position: { x: 100, y: 100 },
+    description: "SOMETHING HERE",
   },
-];
-
-const initialEdges = [
-  { id: "1-2", source: "1", target: "2", label: "please", type: "step" },
+  {
+    id: "3",
+    title: "wait!",
+    description: "SOMETHING HERE",
+  },
+  {
+    id: "4",
+    title: "wait!",
+    description: "SOMETHING HERE",
+  },
+  {
+    id: "5",
+    title: "wait!",
+    description: "SOMETHING HERE",
+  },
+  {
+    id: "6",
+    title: "wait!",
+    description: "SOMETHING HERE",
+  },
 ];
 
 const Page = () => {
   const [nodes, setNodes] = React.useState(initialNodes);
-  const [edges, setEdges] = React.useState(initialEdges);
+  const [edges, setEdges] = React.useState([]);
 
-  React.useEffect(() => {
+  React.useMemo(() => {
     setNodes((e) => workflowConfigInitalNodes(e));
-    setEdges((e) => workflowConfigInitalEdges(e));
-  }, []);
+    setEdges((_) => workflowConfigInitalEdges(nodes));
+  }, [nodes]);
 
   return (
     <>
-      <Workflow initialNodes={nodes} initialEdges={edges} />
+      <div style={{ width: "100%", height: "100%" }}>
+        <Workflow initialNodes={nodes} initialEdges={edges} />
+      </div>
     </>
   );
 };

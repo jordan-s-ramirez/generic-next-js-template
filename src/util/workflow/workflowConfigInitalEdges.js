@@ -1,10 +1,16 @@
 export function workflowConfigInitalEdges(data) {
   if (data === undefined) return;
 
-  for (let i = 0; i < data.length; i++) {
-    data[i] = {
+  let edges = [];
+  for (let i = 1; i < data.length; i++) {
+    edges.push({
       ...data[i],
-    };
+      source: data[i - 1].id,
+      target: data[i].id,
+      // label: "test",
+      type: "simplebezier",
+    });
   }
-  return data;
+
+  return edges;
 }
