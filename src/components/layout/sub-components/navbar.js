@@ -60,12 +60,9 @@ export default function Navbar({ drawerOpen, theme }) {
               <MenuItem
                 key={obj.title + idx}
                 icon={obj.icon}
-                active={
-                  "/" + obj.title.toLowerCase().replace(" ", "-") === currSubUrl
-                }
+                active={obj.url === currSubUrl}
                 onClick={() => {
-                  window.location =
-                    "/" + obj.title.toLowerCase().replace(" ", "-");
+                  window.location = obj.url;
                 }}
               >
                 {obj.title}
@@ -82,16 +79,14 @@ export default function Navbar({ drawerOpen, theme }) {
                     active={
                       "/" +
                         obj.title.toLowerCase().replace(" ", "-") +
-                        "/" +
-                        innerObj.title.toLowerCase().replace(" ", "-") ===
+                        innerObj.url ===
                       currSubUrl
                     }
                     onClick={() => {
                       window.location =
                         "/" +
                         obj.title.toLowerCase().replace(" ", "-") +
-                        "/" +
-                        innerObj.title.toLowerCase().replace(" ", "-");
+                        innerObj.url;
                     }}
                   >
                     {innerObj.title}
