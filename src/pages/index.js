@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/layout";
 import { navbarConfig } from "@/components/layout/sub-components/navbar-config";
-import { Alert, Stack, AlertTitle } from "@mui/material";
+import { Alert, Stack, AlertTitle, Button } from "@mui/material";
 const Page = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Page = () => {
             return (
               <Alert icon={obj.icon} key={obj.title + idx}>
                 <AlertTitle>{obj.title}</AlertTitle>
-                {obj.description}
+                <p>{obj.description}</p>
               </Alert>
             );
           })}
