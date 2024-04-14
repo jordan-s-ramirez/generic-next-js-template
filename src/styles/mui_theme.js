@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 const staticColors = {
   primaryMain: "#4caf50",
   secondaryMain: "#edf2ff",
-  backgroundColorActive: "eecef9",
+  backgroundColorActive: "rgba(76,175,80, 0.5)",
   backgroundColorNotActive: undefined,
 };
 
