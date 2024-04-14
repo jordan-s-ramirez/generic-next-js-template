@@ -5,7 +5,14 @@ const Page = () => {
   return (
     <>
       <h3 style={{ textAlign: "center" }}>Basic Form</h3>
-      <Form />
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log(e.target[0].value);
+        }}
+      >
+        <Form />
+      </form>
     </>
   );
 };

@@ -10,7 +10,7 @@ export default function Form() {
             <Input fullWidth />
           </Grid>
           <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-            <Button fullWidth endIcon={<IoSend />}>
+            <Button fullWidth endIcon={<IoSend />} type="submit">
               Submit
             </Button>
           </Grid>
