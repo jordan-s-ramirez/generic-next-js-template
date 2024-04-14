@@ -32,6 +32,10 @@ export const theme = createTheme({
           ...(ownerState.color === "primary" && {
             backgroundColor: staticColors.primaryMain,
             color: "#fff",
+            "&:hover": {
+              backgroundColor: staticColors.primaryMain + " 70%",
+              color: staticColors.primaryMain,
+            },
           }),
         }),
       },
