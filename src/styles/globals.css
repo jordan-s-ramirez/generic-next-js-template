@@ -22,18 +22,18 @@ body {
 
 /* MAIN LAYOUT CSS */
 .custom-layout-app {
+    /* color: var(--content-color); */
     text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: var(--content-color);
 }
 
 .custom-layout-header,
 .custom-layout-footer {
-    background: var(--header-bgc);
+    /* background: var(--header-bgc); */
+    /* color: var(--header-tc); */
     height: 50px;
-    color: var(--header-tc);
     padding-left: 1vw;
     padding-right: 1vw;
 }
