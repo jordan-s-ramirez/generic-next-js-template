@@ -25,7 +25,5 @@ export function workflowConfigInitalNodes(data) {
     type: "input",
   };
 
-  console.log(data);
-
   return data;
 }
