@@ -7,6 +7,7 @@ import {
 } from "react-pro-sidebar";
 import { navbarConfig } from "./navbar-config.js";
 import React from "react";
+import { FaHome } from "react-icons/fa";
 
 export default function Navbar({ drawerOpen, theme }) {
   const [currSubUrl, setCurrSubUrl] = React.useState("");
@@ -44,6 +45,15 @@ export default function Navbar({ drawerOpen, theme }) {
           },
         }}
       >
+        <MenuItem
+          icon={<FaHome />}
+          active={"/" === currSubUrl}
+          onClick={() => {
+            window.location = "/";
+          }}
+        >
+          Home
+        </MenuItem>
         {navbarConfig.config.map((obj, idx) => {
           if (obj.type === "MenuItem") {
             return (
