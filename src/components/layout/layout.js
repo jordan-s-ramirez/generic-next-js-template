@@ -5,6 +5,15 @@ import { theme } from "@/styles/mui_theme";
 
 export default function Layout({ children }) {
   const [drawerOpen, setDrawerOpen] = React.useState(true);
+  const [debounceTime, setDebouceTime] = React.useState(Date.now());
+
+  function handleDebounce() {
+    if (Date.now() - debounceTime > 700) {
+      setDrawerOpen((e) => !e);
+      setDebouceTime(Date.now());
+    }
+  }
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -15,10 +24,10 @@ export default function Layout({ children }) {
               <div
                 className="custom-layout-sidebar"
                 onMouseEnter={() => {
-                  setDrawerOpen((e) => !e);
+                  handleDebounce();
                 }}
                 onMouseLeave={() => {
-                  setDrawerOpen((e) => !e);
+                  handleDebounce();
                 }}
               >
                 <Navbar drawerOpen={drawerOpen} theme={theme} />
